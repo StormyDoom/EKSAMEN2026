@@ -12,8 +12,15 @@ const borrower = {
     {
       name: 'email',
       title: 'Email',
-      type: 'string'
-    }
+      type: 'string',
+      validation: Rule => Rule.required().email()
+    },
+    {
+      name: 'phone',
+      title: 'Phone',
+      type: 'number'
+    },
+
   ]
 }
 
